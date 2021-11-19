@@ -1,0 +1,18 @@
+<svg width="601" height="338" viewBox="0 0 601 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="animacja">
+<rect id="tlo" x="31" y="17" width="539" height="305" rx="15" fill="#F7F7F7"/>
+<rect id="kafel2" x="318" y="26" width="236" height="127" rx="30" fill="#DDDDDD"/>
+<rect id="kafel3" x="47" y="186" width="236" height="127" rx="30" fill="#DDDDDD"/>
+<rect id="kafel4" x="318" y="186" width="236" height="127" rx="30" fill="#DDDDDD"/>
+<g id="spod">
+<rect id="kafel1" x="47" y="26" width="236" height="127" rx="30" fill="#FFA500"/>
+<rect id="Rectangle 1" x="69" y="41" width="48" height="48" rx="24" fill="white"/>
+<rect id="Rectangle 2" x="158" y="50" width="103" height="11" rx="3" fill="#FF4500"/>
+<rect id="Rectangle 4" x="61" y="121" width="65" height="11" rx="3" fill="#FF4500"/>
+<rect id="Rectangle 5" x="170" y="115" width="79" height="23" rx="5" fill="#FF4500"/>
+<rect id="Rectangle 3" x="158" y="68" width="103" height="11" rx="3" fill="#FF4500"/>
+</g>
+<rect id="kafel1_2" x="47" y="26" width="236" height="127" rx="30" fill="#DDDDDD"/>
+<path id="kursor" d="M178.416 81.2759L192.074 90.7143C193.211 91.4995 192.772 93.2731 191.4 93.4377L184.992 94.2067C184.314 94.288 183.699 94.6428 183.29 95.1889L179.618 100.085C178.776 101.208 176.991 100.663 176.919 99.262L176.065 82.5867C176.002 81.3437 177.392 80.5683 178.416 81.2759Z" fill="black" stroke="white"/>
+</g>
+</svg>

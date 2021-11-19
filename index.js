@@ -1,11 +1,13 @@
+const { application } = require('express');
 const express = require('express');
 
 const app = express();
 app.set('view engine', 'hbs');
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
 
-    res.render('index style/style.css');
+    res.render('index');
 
 });
 

@@ -1,17 +1,11 @@
 const express = require('express');
-const { readFile } = require('fs');
-const { request } = require('http');
 
 const app = express();
+app.set('view engine', 'hbs');
 
-app.get('/', (request, response) => {
+app.get('/', (req, res) => {
 
-    readFile('./index.html', 'utf8', (err, html) =>{
-
-        if(err){response.status(500).send('sorry, out of orderdede');}
-
-        response.send(html);
-    });
+    res.render('index');
 
 });
 

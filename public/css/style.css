@@ -323,7 +323,7 @@ body{
     --side:rgba(255, 255, 255, 0.5);
     --kafel:rgb(221, 221, 221);
     --color:#000;
-    --tlo-url: url(obrazy/tlo-01.svg);
+    --tlo-url: url(../obrazy/tlo-01.svg);
     
     --tlo-c: rgba(0,0,0,0.4);
     --zolty-c:rgba(148, 96, 0, 1);
@@ -332,7 +332,7 @@ body{
     --kafel-c:rgb(165, 165, 165);
     --color-c:#ddd;
     --side-c:rgba(0, 0, 0, 0.5);
-    --tlo-c-url: url(obrazy/tlo-c.svg);
+    --tlo-c-url: url(../obrazy/tlo-c.svg);
 }
 
 .darkmode{

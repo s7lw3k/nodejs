@@ -9,7 +9,7 @@ class Game extends React.Component {
           <div className="game-board">
           </div>
           <div className="game-info">
-            <div>{rgreg}</div>
+            <div>rgreg</div>
             <ol><li>test</li></ol>
           </div>
         </div>

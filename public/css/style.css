@@ -13,20 +13,24 @@ body{
 
     font-family: 'Roboto Slab', serif;
     color: var(--color);
+    overflow: hidden;
 }
 
 .all{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 96vw;
+    grid-template-rows: 1fr;
+    grid-template-areas: "guzik main";
+    align-items: center;
+    justify-items: center;
 }
 
 .main{
-    align-self: center;
-    width: 90%;
-    height: 90%;
+    grid-area: main;
+    width: 95%;
+    height: 95%;
     background-color: var(--tlo-jasne);
     border-radius: 50px;
     backdrop-filter: blur(20px);
@@ -159,10 +163,19 @@ body{
 .main .side svg{
     max-width: 100%;
 }
-
+@media (max-width: 500px){
+    .main ul .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .main{
+        width: 98%;
+        height: 98%;
+    }
+}
 @media (max-width: 1100px){
     .main{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
         grid-template-rows: auto;
         grid-template-areas: "side"
         "card";
@@ -182,14 +195,16 @@ body{
     .main ul .card{
         max-width: 100%;
         height: auto;
-        min-height: 10px;
-    }
-    .main li .card img{
-        min-width: 0px;
+        grid-template-rows: auto;
     }
 }
 
 @media (max-width: 1700px){
+    .all{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px calc(100vh-100px);
+        grid-template-areas: "guzik""main";
+    }
     .main{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -308,7 +323,7 @@ body{
     --side:rgba(255, 255, 255, 0.5);
     --kafel:rgb(221, 221, 221);
     --color:#000;
-    --tlo-url: url(../obrazy/tlo-01.svg);
+    --tlo-url: url(obrazy/tlo-01.svg);
     
     --tlo-c: rgba(0,0,0,0.4);
     --zolty-c:rgba(148, 96, 0, 1);
@@ -317,7 +332,7 @@ body{
     --kafel-c:rgb(165, 165, 165);
     --color-c:#ddd;
     --side-c:rgba(0, 0, 0, 0.5);
-    --tlo-c-url: url(../obrazy/tlo-c.svg);
+    --tlo-c-url: url(obrazy/tlo-c.svg);
 }
 
 .darkmode{
@@ -332,14 +347,13 @@ body{
 }
 
 .all button{
-    width: 3vw;
-    height: 3vw;
+    grid-area: guzik;
+    width: 50px;
+    height: 50px;
     direction: none;
     border:none;
     background-color: var(--tlo-jasne);
     border-radius: 50%;
-    position: absolute;
-    left: 1vw;
-    top:50vh;
-    border: var(--side-c) dashed 0.5px;
+    position: relative;
+    margin:10px;
 }
